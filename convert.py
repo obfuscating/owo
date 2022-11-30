@@ -1,7 +1,7 @@
 import sys
 def convert_code(code: str):
     CHARACTERS = "owo "
-    DELIMITER = "⠀" # set this in run.py to the .split() method
+    DELIMITER = "⠀" # set this in run.py too in the .split() method
     string = ""
     for line in code.splitlines():
         line.strip('\n')
