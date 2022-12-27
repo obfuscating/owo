@@ -9,5 +9,5 @@ def convert_code(code: str):
             string += str(CHARACTERS * ord(character))[:ord(character)] + DELIMITER
         string += str(CHARACTERS * ord("\n"))[:ord("\n")] + DELIMITER
     with open("owo.owo", 'w', encoding='utf-8') as owo:
-        owo.write(string.strip()[:len(string.strip())-1])
+        owo.write(string.strip()[0:-1])
 convert_code(open(sys.argv[1], encoding='utf-8').read())
